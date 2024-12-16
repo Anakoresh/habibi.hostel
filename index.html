@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="keywords" content="hostel, sri lanka, unawatuna, Habibi, Habibi hostel, galle"/>
+    <meta name="description" content="This is the website for Habibi restaurant in Sri Lanka"/>
+    <title>Habibi hostel</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500;600;700&family=Gulzar&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+
+<body class="fade-in">
+    <header class="header">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
+            <div class="d-none websites-links d-flex">
+                <a href="https://anakoresh.github.io/Habibi-tours/" target="_blank">TOURS</a>
+                <a href="https://anakoresh.github.io/habibi.restaurant.delivery/" target="_blank">RESTAURANT</a>
+            </div>
+            <div class="header-left d-flex align-items-center">
+                <button class="burger-menu d-flex align-items-center" aria-label="Open menu">
+                    <span>MENU</span>
+                    <svg width="70" height="35" viewBox="0 0 70 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 31H70" stroke="white" stroke-width="7"/>
+                        <path d="M10 17H70" stroke="white" stroke-width="7"/>
+                        <line y1="3.5" x2="70" y2="3.5" stroke="white" stroke-width="7"/>
+                    </svg>
+                </button>
+                <button id="profile-icon" class="profile-icon" aria-label="Profile">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M31.25 15C31.25 18.4518 28.4518 21.25 25 21.25C21.5482 21.25 18.75 18.4518 18.75 15C18.75 11.5482 21.5482 8.75 25 8.75C28.4518 8.75 31.25 11.5482 31.25 15Z" fill="white"/>
+                        <path d="M12.8565 29.8611C12.0543 32.5523 12.8565 37.5 12.8565 37.5H38.3935C38.3935 37.5 39.1957 32.5523 38.3935 29.8611C37.5619 27.0716 34.498 25 34.498 25H16.752C16.752 25 13.6881 27.0716 12.8565 29.8611Z" fill="white"/>
+                        <circle cx="25" cy="25" r="23" stroke="white" stroke-width="4"/>
+                    </svg>
+                </button>
+            </div>
+            <button class="check-availability" aria-label="Check availability">
+                CHECK AVAILABILITY
+            </button>
+            <button class="hide-slide-out-panel d-none">
+                <img src="img/arrow.svg" alt="arrow">
+            </button>
+        </div>
+        <nav id="menu" class="menu">
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#rooms">OUR ROOMS</a></li>
+                <li><a href="#areas">HOSTEL AREAS</a></li>
+                <li><a href="#about-us">ABOUT US</a></li>
+                <li><a href="#our-service">OUR SERVICE</a></li>
+                <li><a href="#restaurant">RESTAURANT</a></li>
+                <li><a href="#tours">TOURS</a></li>
+                <li><a href="#around-hostel">AROUND HABIBI HOSTEL</a></li>
+                <li><a href="#contacts">CONTACTS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container slide-out-panel d-flex justify-content-center">
+        <form id="availability-form" class="availability-form d-flex flex-wrap justify-content-center align-items-center">
+            <div class="form-field d-flex flex-column">
+                <label for="check-in">CHECK-IN:</label>
+                <input type="date" id="check-in" name="check-in">
+            </div>
+            <div class="form-field d-flex flex-column">
+                <label for="check-out">CHECK-OUT:</label>
+                <input type="date" id="check-out" name="check-out">
+            </div>
+            <div class="form-field d-flex flex-column">
+                <label for="adults">ADULTS:</label>
+                <select id="adults" name="adults">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                </select>
+            </div>
+            <button type="submit">SEARCH</button>
+        </form>
+    </div>
+    <section id="home">
+        <div class="container typewriter">
+            <p id="text" class="home-title">FEEL THE ISLAND VIBE WITH US<br>AT HABIBI HOSTEL!</p>
+        </div>
+    </section>
+    <section id="rooms">
+        <div class="container">
+            <h1 class="section-title">OUR ROOMS</h1>
+            <div class="carousel">
+                <div class="swiper">
+                    <div class="swiper-wrapper d-flex align-items-center">
+                        <div class="swiper-slide">
+                            <div class="room-img lazy-bg" style="background-image: url('img/room1.webp');"></div>
+                            <p class="room-title">DELUXE DOUBLE ROOM WITH PRIVATE ENTRANCE</p>
+                            <a href="room1.html" class="room-btn" target="_blank">MORE</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="room-img lazy-bg" style="background-image: url('img/room2.webp');"></div>
+                            <p class="room-title">MIXED DORMITORY ROOM</p>
+                            <a href="room2.html" class="room-btn" target="_blank">MORE</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="room-img lazy-bg" style="background-image: url('img/room3.webp');"></div>
+                            <p class="room-title">DELUXE DOUBLE ROOM WITH BALCONY</p>
+                            <a href="room3.html" class="room-btn" target="_blank">MORE</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="room-img lazy-bg" style="background-image: url('img/room4.webp');"></div>
+                            <p class="room-title">DELUXE DOUBLE ROOM WITH AC</p>
+                            <a href="room4.html" class="room-btn" target="_blank">MORE</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="room-img lazy-bg" style="background-image: url('img/room5_3.webp');"></div>
+                            <p class="room-title">STANDARD ROOM WITH SHARED BATHROOM</p>
+                            <a href="room5.html" class="room-btn" target="_blank">MORE</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="room-img lazy-bg" style="background-image: url('img/room6_3.webp');"></div>
+                            <p class="room-title">FEMALE DORMITORY ROOM</p>
+                            <a href="room6.html" class="room-btn" target="_blank">MORE</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="room-img lazy-bg" style="background-image: url('img/room7.webp');"></div>
+                            <p class="room-title">MIXED DORMITORY ROOM WITH AC</p>
+                            <a href="room7.html" class="room-btn" target="_blank">MORE</a>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="areas">
+        <div class="container">
+            <h1 class="section-title">HOSTEL AREAS</h1>
+            <div class="carousel">
+                <div class="swiper">
+                    <div class="swiper-wrapper d-flex align-items-center">
+                        <div class="swiper-slide">
+                            <div class="room-img lazy-bg" style="background-image: url('img/groundfloor.webp');"></div>
+                            <p class="room-title">GROUND FLOOR</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="room-img lazy-bg" style="background-image: url('img/habibibar.webp');"></div>
+                            <p class="room-title">HABIBI BAR</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="room-img lazy-bg" style="background-image: url('img/rooftop.webp');"></div>
+                            <p class="room-title">TOP FLOOR CHILL ZONES</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="room-img lazy-bg" style="background-image: url('img/garden.webp');"></div>
+                            <p class="room-title">GARDEN SPOTS</p>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about-us">
+        <div class="container">
+            <h1 class="section-title">ABOUT US</h1>
+            <div class="our-story">
+                <h2>OUR STORY</h2>
+                <p>nestled in the heart of unawatuna, sri lanka, our hostel has been welcoming travelers since january 2023. what started as a dream back in 2017 has become a reality, crafted with dedication and heart. our founder, originally from palestine, saw potential in this two-story structure that had little more than a foundation. over the years, he transformed it into the vibrant four-story haven you see today, building much of it himself and carefully curating each detail from scratch. </p>
+                <p>our hostel is more than just a place to stay—it’s a blend of cultures. The design reflects elements brought from the middle east, giving the space a unique charm that combines eastern tradition with a tropical vibe. our restaurant, located within the hostel, serves authentic arabic cuisine that has delighted hundreds of guests, adding a taste of home for some and a taste of adventure for others. </p>
+                <p>from the architecture to the cuisine, every corner of our hostel tells a story of passion, resilience, and a vision brought to life across oceans. we invite you to be part of that story.</p>
+            </div>
+            <div class="reviews">
+                <h2>REVIEWS</h2>
+                <div class="carousel">
+                    <div class="swiper">
+                        <div class="swiper-wrapper d-flex align-items-center">
+                            <div class="swiper-slide">
+                                <div class="review d-flex flex-column justify-content-between align-items-center">
+                                    <p class="review-name">Timmy Hegel</p>
+                                    <p class="review-text">We booked two nights. We thought it was really good here, so we extended it by four nights. The staff is super friendly and the owner and his wife are so welcoming… wow. Simply fantastic here. The hostel was designed with so much love and you can tell that the owners do everything to make you feel comfortable. Here you are not the tourist who should just leave money behind. Definitely eat here and try the cocktails… amazing. I would come back at any time. It's a dream.</p>
+                                    <a href="https://maps.app.goo.gl/CFxsCa6JiDmoCByTA" target="_blank">REED FULL REVIEW</a>
+                                    <div class="stars"><img src="img/stars.svg" alt="stars"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="review d-flex flex-column justify-content-between align-items-center">
+                                    <p class="review-name">Xena Mandola</p>
+                                    <p class="review-text">Very nice hostel with a wonderful location in the middle of the green. Just a few minutes walk to the nearest beach and town. Extremely friendly and accommodating owner. Nice staff, excellent food and delicious cocktails. Clean rooms and a great roof terrace/lounge to relax. We had a great time here and would come back at any time. Highly recommended!</p>
+                                    <a href="https://maps.app.goo.gl/UJyzUWUTRLby1yyc8" target="_blank">REED FULL REVIEW</a>
+                                    <div class="stars"><img src="img/stars.svg" alt="stars"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="review d-flex flex-column justify-content-between align-items-center">
+                                    <p class="review-name">Nikiforov life</p>
+                                    <p class="review-text">The falafel of dreams is born here. And then it ends its existence! There is also shukshuka, but I haven’t gotten to it yet. I recommend: clean, stylish, welcoming, quiet. There is delicious food for vegans. The top floor offers beautiful views of the ocean sunset. Thank you! I'll come again!</p>
+                                    <a href="https://maps.app.goo.gl/2G9kxEN5HokkBPnB7" target="_blank">REED FULL REVIEW</a>
+                                    <div class="stars"><img src="img/stars.svg" alt="stars"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="review d-flex flex-column justify-content-between align-items-center">
+                                    <p class="review-name">GG R</p>
+                                    <p class="review-text">Had a great stay here, plenty of nice and comfortable seats. Rooms are neat and clean. The owner is super sweet and hospitable and makes the tastiest Arabic breakfast ever!!
+                                        Tip: if you go there on foot, go via the main road, because Google maps sends you into the jungle on a sandy path when it is almost dark and that was not nice. I would definitely go here again in the future</p>
+                                    <a href="https://maps.app.goo.gl/ZbLgZNsrxXHBubJP7" target="_blank">REED FULL REVIEW</a>
+                                    <div class="stars"><img src="img/stars.svg" alt="stars"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="review d-flex flex-column justify-content-between align-items-center">
+                                    <p class="review-name">Kalina Parthoens</p>
+                                    <p class="review-text">If I could give more than 5 stars I would! A super host in a beautiful and well-maintained hostel in a nice location. The Arabic breakfast is highly recommended. We were big fans and stayed an extra night.</p>
+                                    <a href="https://maps.app.goo.gl/W6vjRgW3izp8oT498" target="_blank">REED FULL REVIEW</a>
+                                    <div class="stars"><img src="img/stars.svg" alt="stars"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="our-service">
+        <div class="container">
+            <h1 class="section-title">OUR SERVICE</h1>
+            <div class="services row">
+                <div class="service-item col-md-4 col-6 mb-4">
+                    <img class="service-img img-fluid" src="img/bike.webp" alt="service 1" loading="lazy">
+                    <p class="service-name mt-2">BIKE RENT</p>
+                </div>
+                <div class="service-item col-md-4 col-6 mb-4">
+                    <img class="service-img img-fluid" src="img/airport-shuttle.webp" alt="service 2" loading="lazy">
+                    <p class="service-name mt-2">AIRPORT SHUTTLE</p>
+                </div>
+                <div class="service-item col-md-4 col-6 mb-4">
+                    <img class="service-img img-fluid" src="img/laundry.webp" alt="service 3" loading="lazy">
+                    <p class="service-name mt-2">LAUNDRY</p>
+                </div>
+                <div class="service-item col-md-4 col-6 mb-4">
+                    <img class="service-img img-fluid" src="img/bar-2.WEBP" alt="service 4" loading="lazy">
+                    <p class="service-name mt-2">HABIBI BAR</p>
+                </div>
+                <div class="service-item col-md-4 col-6 mb-4">
+                    <img class="service-img img-fluid" src="img/restaurant.webp" alt="service 5" loading="lazy">
+                    <p class="service-name mt-2">HABIBI RESTAURANT</p>
+                </div>
+                <div class="service-item col-md-4 col-6 mb-4">
+                    <img class="service-img img-fluid" src="img/ella.webp" alt="service 6" loading="lazy">
+                    <p class="service-name mt-2">TOURS AROUND SRI LANKA</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="restaurant">
+        <div class="container d-flex flex-column align-items-center">
+            <h1 class="section-title">HABIBI RESTAURANT</h1>
+            <a href="https://anakoresh.github.io/habibi.restaurant.delivery/" class="d-none visit-website" target="_blank">VISIT WEBSITE</a>
+            <div class="restaurant-text">
+                <p>DISCOVER AUTHENTIC MIDDLE EASTERN FLAVORS AT HABIBI RESTAURANT!</p>
+                <p>located right inside our hostel, habibi restaurant offers a cozy space where guests can experience the rich tastes of the middle east. from creamy hummus to freshly made falafel, each dish is crafted with care and high-quality ingredients to give you an unforgettable dining experience!</p>
+            </div>
+        </div>
+    </section>
+    <section id="tours">
+        <div class="container d-flex flex-column align-items-center">
+            <h1 class="section-title">HABIBI TOURS</h1>
+            <p>EXPLORE AROUND SRI LANKA WITH US!</p>
+            <h2 class="tours-title">POPULAR TOURS</h2>
+            <div class="swiper-two">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="image-pair d-flex justify-content-center">
+                            <div class="tour-item">
+                                <div class="tour-img lazy-bg" style="background-image: url('img/sigiriya.webp');"></div>
+                                <h3 class="tour-name">DAMBULLA</h3>
+                            </div>
+                            <div class="tour-item">
+                                <div class="tour-img lazy-bg" style="background-image: url('img/anuradhapura.webp');"></div>
+                                <h3 class="tour-name">ANURADHAPURA</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-pair d-flex justify-content-center">
+                            <div class="tour-item">
+                                <div class="tour-img lazy-bg" style="background-image: url('img/galle.webp');"></div>
+                                <h3 class="tour-name">DOWN SOUTH</h3>
+                            </div>
+                            <div class="tour-item">
+                                <div class="tour-img lazy-bg" style="background-image: url('img/ella.webp');"></div>
+                                <h3 class="tour-name">DOWN SOUTH 2</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-pair d-flex justify-content-center">
+                            <div class="tour-item">
+                                <div class="tour-img lazy-bg" style="background-image: url('img/nuwaraeliya.webp');"></div>
+                                <h3 class="tour-name">HILL COUNTRY</h3>
+                            </div>
+                            <div class="tour-item">
+                                <div class="tour-img lazy-bg" style="background-image: url('img/colombo.webp');"></div>
+                                <h3 class="tour-name">CAPITAL CITY</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next swiper-two-button-next"></div>
+                <div class="swiper-button-prev swiper-two-button-next"></div>
+            </div>
+            <a href="https://anakoresh.github.io/Habibi-tours/" class="d-none visit-website" target="_blank">VISIT WEBSITE</a>
+        </div>
+    </section>
+    <section id="around-hostel">
+        <div class="container">
+            <h1 class="section-title">AROUND <br>HABIBI HOSTEL</h1>
+            <p class="around-hostel-subtitle">DISCOVER AMAZING PLACES AROUND HABIBI HOSTEL</p>
+            <div class="around-hostel-info">
+                <p>take a look at our map to plan your visit:</p>
+                <ul>
+                    <li>unawatuna beach — relax on one of the most famous beaches with golden sands and turquoise waters.</li>
+                    <li>jungle beach — a hidden gem with a secluded atmosphere and lush jungle surroundings.</li>
+                    <li>dewata beach — a favorite spot for surfing and enjoying the waves.</li>
+                    <li>japanese peace pagoda — a serene and peaceful spot with panoramic views of the coastline.</li>
+                    <li>frog rock — a unique natural rock formation and perfect photo spot.</li>
+                    <li>galle fort — discover history and colonial architecture at this UNESCO world heritage site.</li>
+                    <li>dalawella beach — known for its palm tree rope swing and vibrant sunsets.</li>
+                </ul>
+                <p style="color: #3CB371;">check out our interactive map to see where each place is located, and click to expand for a full view!</p>
+            </div>
+            <div class="around-hostel-media d-flex flex-column align-items-center">
+                <div class="map">
+                    <img src="img/map.png" alt="map" class="thumbnail" loading="lazy">
+                    <button id="expand-btn">EXPAND</button>
+                </div>
+                <div id="modal" class="modal">
+                    <span id="close-btn">X</span>
+                    <img src="img/map.webp" alt="map" class="modal-content" id="expanded-image">
+                </div>
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/zpCZQzQG1iQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+    <section id="contacts">
+        <div class="container">
+            <h1 class="section-title">CONTACTS</h1>
+            <div class="contacts-page-info">
+                <p>feel free to reach out with any questions!</p>
+                <p>phone: <a href="tel:+94778750629" style="color: #3CB371;">+94 (77) 875 0629</a></p>
+                <p>email: <a href="habibihostelsrilanka@gmail.com" style="color: #3CB371;">habibihostelsrilanka@gmail.com</a></p>
+                <p>location: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.8711626599033!2d80.23945477370663!3d6.0124225288940485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae173f452cb8681%3A0xafdc62ede65859b7!2sHabibi%20Hostel%20%26%20Restaurant!5e0!3m2!1sen!2sqa!4v1730119965040!5m2!1sen!2sqa" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="footer-contacts">
+                <p>phone: <a href="tel:+94778750629" style="color: #3CB371;">+94 (77) 875 0629</a></p>
+                <p>email: <a href="habibihostelsrilanka@gmail.com" style="color: #3CB371;">habibihostelsrilanka@gmail.com</a></p>
+            </div>
+            <div class="social-media-links d-flex justify-content-between">
+                <a href="https://www.instagram.com/habibihostellanka?igsh=bG9mbnp6Z3FyYWdi" target="_blank"><img src="img/instagram.svg" alt="instagram"/></a>
+                <a href="https://www.facebook.com/share/9ZQujrAn1byjXo8f/?mibextid=kFxxJD" target="_blank"><img src="img/fb.svg" alt="facebook"/></a>
+                <a href="https://youtube.com/@habibihostel?si=cECmIZ6kzfZex7TD" target="_blank"><img src="img/youtube.svg" alt="youtube"/></a>
+                <a href="https://www.tiktok.com/@habibihostel4?_t=8qtTYFS86cc&_r=1" target="_blank"><img src="img/tiktok.svg" alt="tiktok"/></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+    <script src="main-page.js"></script>
+  </body>
+</html>

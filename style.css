@@ -1,0 +1,1326 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+  
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: "Cormorant SC", serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+button {
+    background: none;
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+h1 {
+    font-family: "Cormorant SC", serif;
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+}
+
+button:hover, a:hover {
+    opacity: 0.8;
+}
+
+@keyframes example {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+.typewriter {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    border-right: 2px solid black;
+    animation: blink 0.7s step-end infinite;
+}
+  
+@keyframes blink {
+    from { border-color: transparent; }
+    to { border-color: black; }
+}
+  
+.fade-in {
+    animation: example 1.5s ease-in-out;
+}
+
+.container {
+    width: 1020px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+header {
+    position: fixed;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    background-color: rgba(31,36,78, 1);
+    z-index: 1000;
+}
+
+header .container {
+    height: 120px;
+}
+
+.logo {
+    height: 100px;
+    display: block;
+}
+
+.logo img {
+    height: 100%;
+}
+
+.websites-links {
+    width: 240px;
+    text-align: center;
+}
+
+.websites-links a, .header-left span {
+    font-family: "Cormorant SC", serif;
+    font-weight: 500;
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    padding-left: 30px;
+}
+
+.burger-menu svg{
+    margin: 0 20px;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    background-color: #1f244e;
+    transform: translateX(100%);
+    transition: transform 1s ease;
+    border-left: 2px solid #fff;
+    z-index: 1000;
+}
+  
+#menu.active {
+    transform: translateX(0%);
+}
+  
+#menu ul {
+    padding: 2rem;
+    padding-top: 3rem;
+    font-family: "Cormorant SC", serif;
+    font-style: normal;
+    font-weight: 500;
+    list-style: none;
+}
+  
+#menu li {
+    margin-bottom: 1rem;
+}
+  
+#menu li a {
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.check-availability {
+    font-family: "Cormorant SC", serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #001826;
+    padding: 5px 10px;
+    background-color: #eaeaea;
+    border-radius: 40px;
+    border: 2px solid #1F244E;
+}
+
+.hide-slide-out-panel, .check-availability {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.hide-slide-out-panel {
+    z-index: 1;
+}
+
+.slide-out-panel {
+    height: 80px;
+    position: fixed;
+    z-index: 20;
+    top: 164px;
+    left: 50%;
+    background-color: rgba(31,36,78, 0.7);
+    transform: translate(-50%, -100%);
+    border: 2px solid #fff;
+    border-top: none;
+    transition: transform 1s ease;
+}
+
+.slide-out-panel.active {
+    transform: translate(-50%, 0);
+}
+
+.availability-form {
+    font-family: "Cormorant SC", serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.availability-form label {
+    color: #fff;
+    font-size: 20px;
+}
+
+.availability-form input, .availability-form select {
+    font-size: 20px;
+    background-color: #eaeaea;
+    border: none;
+    padding: 0 5px;
+}
+
+.availability-form label, .availability-form input, .availability-form select {
+    height: 30px;
+}
+
+.form-field {
+    margin-right: 20px;
+    width: 150px;
+}
+
+.availability-form button {
+    background-color: #1F244E;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+/* Home */
+
+#home {
+    background-image: url("img/home.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 300px;
+    padding-bottom: 50px;
+}
+
+.home-title {
+    color: #fff;
+    background-color: #1F244E;
+    text-align: center;
+    margin: 0 -12px;
+    font-size: 48px;
+    font-family: "Cormorant SC", serif;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 150px;
+    padding: 10px;
+    min-height: 164px;
+}
+
+/* Rooms */
+
+#rooms, #areas, #about-us, #our-service {
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
+#rooms {
+    background-color: #1F244E;
+}
+
+.section-title {
+    color: #fff;
+    font-size: 56px;
+}
+
+.carousel {
+    font-family: "Cormorant SC", serif;
+    font-weight: 500;
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 0 !important;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+#rooms .carousel {
+    min-height: 370px;
+}
+
+.swiper-wrapper {
+    padding-bottom: 10px;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 1.5s ease;
+}
+
+.swiper-slide-active {
+    transform: scale(1.3);
+    z-index: 10;
+}
+
+#rooms .room-img {
+    border: 3px solid #fff;
+}
+
+.room-img {
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease, width 0.3 ease, height 0.3 ease;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+#rooms .room-title {
+    color: #fff;
+}
+
+.room-title {
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    max-width: 200px;
+    transition: font-size 0.3s ease;
+    padding: 10px 0;
+}
+
+.room-btn {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 0 10px;
+    background-color: #EAEAEA;
+    color: #001826;
+    border-radius: 40px;
+    text-decoration: none;
+    font-size: 20px;
+    border: 3px solid #fff;
+    transition: transform 0.3s ease;
+}
+
+.swiper-slide-active .room-img {
+    width: 250px;
+    height: 250px;
+}
+
+.swiper-slide-active .room-title {
+    text-align: center;
+    font-weight: 600;
+}
+
+.swiper-slide-active .room-btn {
+    transform: scale(1.1);
+    text-align: center;
+    font-weight: 600;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+}
+
+.swiper-button-prev {
+    left: 20px;
+}
+
+.swiper-button-next {
+    right: 20px;
+}
+
+/* Areas */
+
+#areas, #our-service {
+    background-color: #eaeaea;
+}
+
+#areas .section-title, #our-service .section-title, #around-hostel .section-title {
+    color: #1F244E;
+}
+
+#areas .room-img {
+    border: 3px solid #1F244E;
+}
+
+#areas .room-title {
+    color: #1F244E;
+}
+
+/* About us */
+
+#about-us {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    color: #fff;
+    font-family: "Cormorant SC", serif;
+    font-weight: 500;
+}
+
+#about-us:before {
+    background-image: url('img/bg.webp');
+    content: "";
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+#about-us:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(31,36,78, 0.7);
+    z-index: -1;
+}
+
+#about-us h2 {
+    font-size: 48px;
+    text-align: center;
+}
+
+.our-story p {
+    font-size: 32px;
+}
+
+.our-story {
+    margin-top: 20px;
+}
+
+.review {
+    width: 200px;
+    height: 200px;
+    background-color: #eaeaea;
+    border: 3px solid #1F244E;
+    transition: transform 0.3s ease, width 0.3 ease, height 0.3 ease;
+    margin: 0 auto;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.review-name, .review a {
+    font-size: 16px;
+}
+
+.review-text {
+    font-size: 12px;
+    text-align: start;
+    height: 50%;
+    overflow: hidden;
+}
+
+.review a {
+    margin-bottom: 5px;
+}
+
+.review-name, .review-text, .review a {
+    color: #1F244E;
+    font-weight: 600;
+    max-width: 200px;
+    transition: font-size 0.3s ease;
+}
+
+.stars {
+    width: 90%;
+}
+
+.stars img {
+    width: 100%;
+}
+
+.swiper-slide-active .review{
+    width: 300px;
+    height: 300px;
+}
+
+.swiper-slide-active .review-text {
+    font-size: 14px;
+    max-width: 300px;
+}
+
+.swiper-slide-active .review-name, .swiper-slide-active a {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    max-width: 300px;
+}
+
+/* Our service */
+
+.service-img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border: 3px solid #1F244E;
+}
+
+.service-name {
+    font-family: "Cormorant SC", serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: #1F244E;
+}
+
+/* Habibi restaurant */
+
+#restaurant {
+    width: 100%;
+    min-height: 70vh;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    color: #fff;
+    font-family: "Cormorant SC", serif;
+    font-weight: 500;
+    padding-top: 200px;
+    padding-bottom: 50px;
+}
+
+#restaurant:before {
+    background-image: url('img/restaurant.webp');
+    content: "";
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+#restaurant:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(31,36,78, 0.4);
+    z-index: -1;
+}
+
+.visit-website {
+    text-decoration: none;
+    font-size: 24px;
+    color: #001826;
+    padding: 5px 15px;
+    background-color: #eaeaea;
+    border-radius: 40px;
+    border: 2px solid #1F244E;
+    margin: 20px 0 40px 0;
+}
+
+.restaurant-text {
+    background-color: rgba(31,36,78, 0.4);
+    color: #fff;
+    margin: 0 -12px;
+}
+
+.restaurant-text p {
+    padding: 5px 10px;
+}
+
+.restaurant-text p:first-child {
+    font-size: 36px;
+}
+
+.restaurant-text p:last-child {
+    font-size: 32px;
+}
+
+/* Tours */
+
+#tours {
+    font-family: "Cormorant SC", serif;
+    font-weight: 500;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    background-color: #1F244E;
+    color: #fff;
+}
+
+#tours p, .around-hostel-subtitle {
+    font-size: 32px;
+    text-align: center;
+}
+
+.tours-title {
+    font-size: 48px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.swiper-two {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-pair {
+    gap: 40px;
+}
+
+.tour-img {
+    width: 300px;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 3px solid #fff;
+}
+
+.tour-name {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.swiper-button-next.swiper-two-button-next, 
+.swiper-button-prev.swiper-two-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.swiper-two-button-prev {
+    left: 20px;
+}
+
+.swiper-two-button-next {
+    right: 20px;
+}
+
+/* Around Habibi Hostel */
+
+#around-hostel {
+    font-family: "Cormorant SC", serif;
+    font-weight: 500;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    background-color: #eaeaea;
+    color: #1F244E;
+}
+
+.around-hostel-info {
+    margin: 50px 10px;
+    font-size: 32px;
+}
+
+.around-hostel-media {
+    width: 60%;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.map {
+    position: relative;
+}
+
+.map img {
+    width: 100%;
+}
+
+#expand-btn {
+    background-color: #eaeaea;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    padding: 5px 10px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+}
+  
+/* Modal styles */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+}
+  
+.modal-content {
+    max-width: 70%;
+    display: block;
+}
+  
+#close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Contacts */ 
+
+#contacts {
+    font-family: "Cormorant SC", serif;
+    font-weight: 500;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    background-color: #1F244E;
+    color: #fff;
+}
+
+.contacts-page-info {
+    font-size: 32px;
+}
+
+.contacts-page-info a {
+    text-decoration: none;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #EAEAEA;
+    padding: 30px 0;
+    font-family: "Cormorant SC", serif;
+    font-weight: 500;
+}
+
+.footer-contacts {
+    font-size: 24px;
+}
+
+.footer-contacts p {
+    margin: 0;
+}
+
+.social-media-links {
+    width: 320px;
+}
+  
+.social-media-links a {
+    display: block;
+}
+  
+.social-media-links img {
+    border-radius: 10px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+/* Room page*/
+
+.room-section {
+    padding: 200px 0 40px 0;
+    background-color: #1F244E;
+    color: #fff;
+    font-family: "Cormorant SC", serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.room-section {
+    text-align: center;
+}
+
+.room-page-title {
+    font-size: 36px;
+}
+
+.room-main-info {
+    font-size: 24px;
+}
+
+.room-main-info p {
+    margin: 5px 0;
+}
+
+.room-gallery {
+    margin: 20px 0;
+    gap: 20px;
+}
+
+.gallery-item {
+    flex: 1;
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+    position: relative;
+    box-shadow: 1px 2px 10px;
+    border: 3px solid #fff;
+}
+
+.gallery-item:first-child {
+    margin-left: 0;
+}
+
+.gallery-item:last-child {
+    margin-right: 0;
+}
+
+.active {
+    flex: 7;
+}
+
+.facilities {
+    margin-bottom: 40px;
+}
+
+.facilities ul {
+    text-align: left;
+    font-size: 24px;
+}
+
+.room-section form {
+    border: 2px solid #fff;
+    padding: 0 10px;
+    margin: 0 -14px;
+    height: 80px;
+}
+
+/* Confirmation page */
+
+#confirmation-page {
+    min-height: 100vh;
+    background-color: #1F244E;
+    font-family: "Cormorant SC", serif;
+    font-style: normal;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 132px;
+    text-align: center;
+}
+
+#confirmation-page h2 {
+    font-size: 48px;
+}
+
+#confirmation-page p {
+    font-size: 24px;
+}
+
+#confirmation-page a {
+    text-decoration: none;
+}
+
+.back {
+    font-weight: 600;
+    font-size: 24px;
+    color: #001826;
+    padding: 10px 20px;
+    background-color: #eaeaea;
+    border-radius: 40px;
+    border: 2px solid #1F244E;
+}
+
+.confirmation-page.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Responsive */
+
+@media (max-width: 1024px) {
+    .logo {
+        height: 70px;
+    }
+
+    .websites-links a, .header-left span, .check-availability, #expand-btn {
+        font-size: 20px;
+    }
+
+    .burger-menu svg {
+        width: 40px;
+    }
+
+    .profile-icon svg {
+        width: 35px;
+    }
+
+    .burger-menu svg {
+        margin: 0 10px;
+    }
+
+    #menu li a {
+        font-size: 1rem;
+    }
+
+    .form-field {
+        width: 100px;
+        margin-right: 10px;
+    }
+
+    .home-title {
+        font-size: 40px;
+        min-height: 144px;
+    }
+
+    .section-title {
+        font-size: 48px;
+    }
+
+    #rooms, #areas, #about-us, #our-service {
+        padding-bottom: 50px;
+    }
+
+    #about-us h2 {
+        font-size: 40px;
+    }
+    
+    .our-story p, .restaurant-text p:last-child, .around-hostel-info, .contacts-page-info {
+        font-size: 24px;
+    }
+
+    .restaurant-text p:first-child {
+        font-size: 32px;
+    }
+
+    .tours-title {
+        font-size: 40px;
+    }
+
+    .tour-img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .footer-contacts {
+        font-size: 20px;
+    }
+
+    .social-media-links {
+        width: 250px;
+    }
+
+    .room-card {
+        height: 250px;
+    }
+
+    .room-info {
+        width: 55%;
+    }
+
+    .room-name {
+        font-size: 32px;
+    }
+
+    .room-occupancy, .room-info-bottom .room-btn {
+        font-size: 20px;
+    }
+
+    .room-card-img {
+        width: 40%;
+    }
+
+    #confirmation-page {
+        padding-bottom: 120px;
+    }
+}
+
+@media (max-width: 800px) {
+    header {
+        top: 20px;
+    }
+
+    header .container {
+        height: 100px;
+    }
+
+    .websites-links a, .header-left span, .check-availability, #expand-btn {
+        font-size: 16px;
+    }
+
+    #menu {
+        width: 40%;
+    }
+
+    .check-availability {
+        padding: 2px 5px;
+    }
+
+    .slide-out-panel {
+        height: 80px;
+        top: 124px;
+    }
+
+    .hide-slide-out-panel img {
+        height: 30px;
+    }
+
+    .form-field {
+        width: 90px;
+    }
+
+    .availability-form button {
+        font-size: 14px;
+    }
+
+    .home-title {
+        font-size: 30px;
+        margin-top: 100px;
+        min-height: 110px;
+    }
+
+    #rooms, #areas, #about-us, #our-service, #restaurant, #tours, #around-hostel, #contacts, .room-section {
+        padding-top: 140px;
+    }
+
+    .carousel {
+        margin-top: 20px;
+    }
+
+    .swiper-slide-active .room-img, .swiper-slide-active .review {
+        width: 350px;
+        height: 350px;
+    }
+    
+    .swiper-slide-active .room-title, .swiper-slide-active .review-text {
+        max-width: 350px;
+    }
+
+    #tours p, .around-hostel-subtitle {
+        font-size: 24px;
+    }
+
+    .image-pair {
+        gap: 10px;
+    }
+
+    .tour-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .modal-content {
+        max-width: 90%;
+    }
+
+    .footer-contacts {
+        font-size: 16px;
+    }
+
+    .social-media-links {
+        width: 200px;
+    }
+
+    .social-media-links a {
+        width: 25px;
+        height: 25px;
+    }
+
+    .social-media-links img {
+        width: 100%;
+    }
+
+    .room-card {
+        height: 200px;
+    }
+
+    .room-name {
+        font-size: 24px;
+    }
+
+    .room-occupancy, .room-info-bottom .room-btn {
+        font-size: 16px;
+    }
+
+    .room-page-title {
+        font-size: 32px;
+    }
+
+    .gallery-item {
+        height: 60vh;
+    }
+
+    .room-main-info, .facilities ul {
+        font-size: 20px;
+    }
+
+    #confirmation-page {
+        padding-bottom: 108px;
+    }
+
+    #confirmation-page h2 {
+        font-size: 40px;
+    }
+
+    #confirmation-page p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    header .container, .slide-out-panel {
+        height: 90px;
+    }
+
+    .websites-links {
+        flex-direction: column;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .websites-links a {
+        padding-left: 0;
+    }
+
+    .header-left span{
+        display: none;
+    }
+
+    .burger-menu {
+        position: relative;
+        z-index: 999;
+    }
+
+    #menu {
+        width: 50%;
+    }
+
+    .availability-form label, .availability-form input, .availability-form select {
+        font-size: 14px;
+        height: 24px;
+    }
+
+    .availability-form button, .check-availability, #expand-btn {
+        font-size: 12px;
+        padding: 2px 5px;
+    }
+
+    .hide-slide-out-panel {
+        transform: translate(-50%, -70%)
+    }
+
+    .hide-slide-out-panel img {
+        height: 24px;
+    }
+
+    .slide-out-panel {
+        border-left: none;
+        border-right: none;
+        top: 113px;
+    }
+
+    .home-title {
+        margin-top: 80px;
+        font-size: 24px;
+        min-height: 94px;
+    }
+
+    .swiper-slide-active .room-img, .swiper-slide-active .review {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .swiper-slide-active .room-title, .swiper-slide-active .review-text {
+        max-width: 300px;
+    }
+
+    .our-story p, .restaurant-text p:last-child, .around-hostel-info, .contacts-page-info {
+        font-size: 20px;
+    }
+
+    #tours p, .around-hostel-subtitle {
+        font-size: 20px;
+    }
+
+    .tours-title {
+        font-size: 32px;
+    }
+
+    .tour-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .tour-name {
+        font-size: 16px;
+    }
+
+    #tours .visit-website {
+        margin: 40px 0;
+    }
+
+    .footer-contacts {
+        font-size: 14px;
+    }
+
+    .social-media-links {
+        width: 150px;
+    }
+
+    .room-info-bottom .room-btn {
+        padding: 0 10px;
+    }
+
+    .gallery-item {
+        height: 50vh;
+    }
+
+    .room-section form {
+        height: 90px;
+    }
+}
+
+@media (max-width: 450px) {
+    .burger-menu {
+        padding: 0;
+    }
+
+    #menu {
+        width: 70%;
+    }
+
+    .home-title {
+        font-size: 20px;
+        min-height: 80px;
+    }
+
+    .section-title {
+        font-size: 40px;
+    }
+
+    .swiper-slide-active .room-img, .swiper-slide-active .review {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .swiper-slide-active .room-title, .swiper-slide-active .review-text {
+        max-width: 200px;
+    }
+
+    #about-us h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+    
+    .our-story p, .restaurant-text p:last-child, .around-hostel-info, .contacts-page-info {
+        font-size: 16px;
+    }
+
+    .restaurant-text p:first-child {
+        font-size: 24px;
+    }
+
+    .tours-title {
+        font-size: 24px;
+    }
+
+    .image-pair {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer {
+        padding: 20px 0;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .room-name {
+        font-size: 20px;
+    }
+
+    .room-occupancy, .room-info-bottom .room-btn {
+        font-size: 14px;
+    }
+
+    .room-page-title {
+        font-size: 24px;
+    }
+
+    .room-main-info, .facilities ul {
+        font-size: 16px;
+    }
+
+    .gallery-item {
+        height: 40vh;
+    }
+
+    .room-gallery {
+        gap: 10px;
+    }
+
+    #confirmation-page {
+        padding-bottom: 117px;
+    }
+
+    #confirmation-page h2 {
+        font-size: 36px;
+    }
+}
+
+
+
+
